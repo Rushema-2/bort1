@@ -1,0 +1,23 @@
+/* *,
+::before{
+margin: 0;
+padding: 0;
+}
+::after{
+  margin: 0;
+  padding: 0;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#body-container{
+    background: #ebeae4;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #5a24be, #3e81b8, #78a0bb);
+}
+
+

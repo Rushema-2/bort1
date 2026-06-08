@@ -1,0 +1,39 @@
+*,
+::before{
+ margin: 0;
+ padding: 0;
+}
+::after{
+   margin: 0;
+   padding: 0;
+}
+
+#container{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ /* background-color: brown; */
+}
+#menu-container{
+   display: flex;
+   gap: 20px;
+   font-size: 20px;
+   color: black;
+   /* padding-right: 30px; */
+
+}
+
+#logo img{
+   display: flex;
+   width: 100px;
+   height: 90px;
+}
+#same-container{
+   display: flex;
+   padding: 20px;
+   gap: 15px;
+  
+}
+#G1{
+   text-decoration: underline;
+}
