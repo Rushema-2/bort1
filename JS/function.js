@@ -100,3 +100,40 @@ console.log(checkGrade(90))
 console.log(checkGrade(20))
 console.log(checkGrade(65))
 console.log(checkGrade(32))
+
+
+
+
+function shoppingCart(){
+  const avocado = 2000
+  const banana = 3000
+  const mango = 5000
+
+  function calculateTotal(){
+    const totalPrices = avocado+banana+mango
+    return totalPrices
+  }
+  const sumTotal=calculateTotal()
+  return sumTotal
+}
+console.log(shoppingCart())
+
+
+
+
+
+function checkStudent(student) {
+
+    if (student.active == true) {
+        return "student is active";
+    } else {
+        return "student is not active"
+    }
+}
+
+console.log(checkStudent({active:true}));
+console.log(checkStudent({active:false}));
+
+
+
+
