@@ -1,3 +1,4 @@
+// const console = require("node:console");
 
 function WelcomeMessage() {
     return "welcome to javascript"
@@ -58,3 +59,44 @@ function numberd(a, b) {
 }
 
 console.log(numberd(7, 5));
+
+
+
+function calculateAverage(){
+    const a=2
+    const b=6
+    const c=10
+
+    function sumOfNumber(){
+        const sum=a+b+c
+        return sum
+    }
+
+    const summationResult=sumOfNumber()
+    const avg=summationResult/3
+    return avg
+
+}
+console.log(calculateAverage())
+
+
+
+
+function checkGrade(mark){
+    function getGrade(){
+        if(mark>=80){
+            return 'A'
+        }else if(mark>=70 && mark<=79){
+            return 'B'
+        }else if(mark>=60 && mark<=69){
+            return 'C'
+        }else if(mark<60){
+            return 'D'
+        }
+    }
+    return getGrade()
+}
+console.log(checkGrade(90))
+console.log(checkGrade(20))
+console.log(checkGrade(65))
+console.log(checkGrade(32))
