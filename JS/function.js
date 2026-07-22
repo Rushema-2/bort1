@@ -137,3 +137,46 @@ console.log(checkStudent({active:false}));
 
 
 
+function checkNumber(number) {
+    if (number > 0) {
+        return "Positive number";
+    } else if (number < 0) {
+        return "Negative number";
+    } else {
+        return "Zero";
+    }
+}
+
+console.log(checkNumber(5));
+console.log(checkNumber(-1));
+console.log(checkNumber(0));
+
+
+
+
+
+function checkVotingAge(age) {
+    if (age < 0) {
+        return "Invalid age.";
+    } else if (age >= 18) {
+        return "You are eligible to vote.";
+    } else {
+        return "You are not eligible to vote.";
+    }
+}
+
+console.log(checkVotingAge(18)); 
+console.log(checkVotingAge(15)); 
+console.log(checkVotingAge(-5)); 
+
+function checkResult(mark) {
+    if (mark >= 50) {
+        return "You passed";
+    } else {
+        return "You failed";
+    }
+}
+
+console.log(checkResult(50));
+console.log(checkResult(45)); 
+console.log(checkResult(80));
