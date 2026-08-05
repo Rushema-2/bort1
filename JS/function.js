@@ -1,5 +1,7 @@
 // const console = require("node:console");
 
+// const { object } = require("webidl-conversions")
+
 // const { startupSnapshot } = require("node:v8");
 
 // function WelcomeMessage() {
@@ -301,48 +303,101 @@
 // console.log(`Found an available seat afterchecking ${i + 1} seats.`)
 
 
+// students.forEach((Element, index) => {
+//     console.log(`${index + 1}.${Element}`)
+// })
+
+
+// const seats = [
+//     { owner: 'MANZI', price: 100, category: 'VIP', status: 'OCCUPIED' },
+//     { owner: 'MUTONI', price: 25, category: 'VIP', status: 'RESERVED' },
+//     { owner: 'EGIDE', price: 50, category: 'VIP', status: 'RESERVED' },
+//     { owner: 'NULL', price: 100, category: 'VIP', status: 'AVAILABLE' },
+//     { owner: 'JUSTIN', price: 25, category: 'VIP', status: 'OCCUPIED' },
+// ]
+
+
+// let Claude;
+// let Eric;
+
+// seats.forEach((seat, index) =>{
+//     if(seat.owner === "MANZI"){
+// Claude =`hey jose, ${seat.owner} allread entered and his in ${seat.category} of ${seat.price}` ;
+// }
+//     if(seat.status === "AVAILABLE") {
+//         Eric = `please check seat ${index + 1} is ${seat.status}`;
+//     }
+// })
+
+//  console.log(`${Claude} ${Eric}`)
+
+
+ 
+//  let totalPrices = 0
+
+// seats.forEach((seat) =>{
+//     if(seat.status === "OCCUPIED" || seat.status === "RESERVED"){
+//   totalPrices += seat.price
+//     }
+// })
+// console.log("totalPrices =" , totalPrices)
+
 
 
 // const students = ["Manzi", "Delphine", "Claude", "Ngabo", "Opera", "Elia", "Egide", "Justin", "Fablice", "Grace", "Jenereze",
 //     "Dyane", "Juasse", "umuyoboro", "Flank"]
 
 
-// students.forEach((Element, index) => {
-//     console.log(`${index + 1}.${Element}`)
+// const welcomeMessage = students.map((student,i) =>{
+//   return`wellcome ${student} tpo the coding school.`
 // })
+// console.log(welcomeMessage)
 
 
-const seats = [
-    { owner: 'MANZI', price: 100, category: 'VIP', status: 'OCCUPIED' },
-    { owner: 'MUTONI', price: 25, category: 'VIP', status: 'RESERVED' },
-    { owner: 'EGIDE', price: 50, category: 'VIP', status: 'RESERVED' },
-    { owner: 'NULL', price: 100, category: 'VIP', status: 'AVAILABLE' },
-    { owner: 'JUSTIN', price: 25, category: 'VIP', status: 'OCCUPIED' },
-]
+// const students = [
+//     {name:"Manzi",mark:70},{name:"Delphine",mark:60},{name:"Claude",mark:80},{name:"Ngabo",mark:65},
+//     {name:"Opera",mark:55},{name:"Elia",mark:75},{name:"Egide",mark:85},{name:"Justin",mark:82}
+// ]
+
+//  const updateMarks = students.map((student) =>{
+//     return {name:student.name,marks: `${student.mark}/100 `, comment: ""};
+// //    return {
+// //         name: student.name,
+// //        claude: student.mark + '/100',comment: ""}
+//  })
+
+//  console.log(updateMarks )
 
 
-let Claude;
-let Eric;
 
-seats.forEach((seat, index) =>{
-    if(seat.owner === "MANZI"){
-Claude =`hey jose, ${seat.owner} allread entered and his in ${seat.category} of ${seat.price}` ;
+ let students = [
+    {name:"karinda",age:24,marks:73,grade:"B"},
+    {name:"grolia",age:17,marks:60,grade:"C"},
+    {name:"leah",age:23,marks:90,grade:"A"},
+    {name:"mpano",age:20,marks:40,grade:"D"}
+ ]
+
+ students.forEach((student) => {
+    if (student.marks >= 70) {
+        console.log(`${student.name} : Excellent`);
+    } else if (student.marks >= 50 && student.marks < 70) {
+        console.log(`${student.name} : Good`);
+    } else {
+        console.log(`${student.name} : Fail`);
+    }
+});
+
+
+for(let i = 0; i<students.length; i++){
+console.log(`${students[i].name}: ${students[i].marks}`)
 }
-    if(seat.status === "AVAILABLE") {
-        Eric = `please check seat ${index + 1} is ${seat.status}`;
-    }
-})
-
- console.log(`${Claude} ${Eric}`)
 
 
- 
- let totalPrices = 0
 
-seats.forEach((seat) =>{
-    if(seat.status === "OCCUPIED" || seat.status === "RESERVED"){
-  totalPrices += seat.price
-    }
-})
-console.log("totalPrices =" , totalPrices)
+let prices = [200, 100, 400, 35];
+
+let totalprice = prices.map((price, i) => {
+    return prices = price * 1.10;
+});
+console.log(totalprice)
 
