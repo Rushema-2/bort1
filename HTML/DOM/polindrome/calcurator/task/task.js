@@ -16,5 +16,5 @@ addTaskBtn.addEventListener("click", function(){
     taskList.appendChild(li);
 
     taskInput.value = "";
-    taskInput.focus();
+    // taskInput.focus();
 })

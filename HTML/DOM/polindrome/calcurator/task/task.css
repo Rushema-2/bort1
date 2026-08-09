@@ -8,7 +8,7 @@ body{
     height: 100vh;
 }
 .container{
-    background: white;
+    background: rgb(109, 106, 106);
     padding: 20px;
     width: 350px;
     border-radius: 8px;
