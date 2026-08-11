@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #d9f7ff;
+
+    font-family: Arial, sans-serif;
+}
+
+
+
+.register-container {
+    width: 780px;
+    min-height: 430px;
+
+    display: flex;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: #c4e8f0;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.register-left {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 35px 20px;
+
+    background: #e6e1e5;
+}
+
+.register-left h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #222;
+
+    margin-bottom: 55px;
+}
+
+
+
+.icon {
+    position: relative;
+
+    font-size: 170px;
+    color: #294c9b;
+}
+
+.icon .check {
+    position: absolute;
+
+    right: -10px;
+    bottom: 5px;
+
+    font-size: 55px;
+
+    background: #e6e1e5;
+    border-radius: 50%;
+}
+
+
+
+.register-right {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 35px 25px;
+
+    background: #9dd5df;
+}
+
+
+
+form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+
+input {
+    width: 100%;
+    height: 55px;
+
+    padding: 0 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #dff7fc;
+
+    font-size: 17px;
+
+    outline: none;
+
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+input::placeholder {
+    color: #496775;
+    font-size: 17px;
+}
+
+input:focus {
+    outline: 2px solid #477ca8;
+}
+
+
+
+button {
+    width: 100%;
+    height: 55px;
+
+    margin-top: 2px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #e5f8fa;
+
+    color: #555;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 700px) {
+
+    .register-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .register-left,
+    .register-right {
+        width: 100%;
+    }
+
+    .register-left {
+        min-height: 300px;
+    }
+
+    .register-left h1 {
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .icon {
+        font-size: 120px;
+    }
+
+    .icon .check {
+        font-size: 40px;
+    }
+}
