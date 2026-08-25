@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register Here</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="./sign-up.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+    
+        <div class="register-left">
+
+            <h1>Register Here</h1>
+
+            <div class="icon">
+                <img src="../image/sign.png">
+            
+            </div>
+
+        </div>
+
+
+     
+        <div class="register-right">
+
+           <form id="signup-form">
+    <label>
+        <input
+            type="text"
+            id="userName"
+            placeholder="Enter your user name"
+            required
+        >
+    </label>
+
+    <label>
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        >
+        <span id="email-validation"></span>
+    </label>
+
+    <label>
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+        >
+        <span id="password-validation"></span>
+    </label>
+
+    <button type="submit">Sign up</button>
+
+    <div class="link">
+        <a href="#">You have an account?</a>
+        <a href="#">Login</a>
+    </div>
+</form>
+        </div>
+
+    </div>
+
+    <script src="./create.js"></script>
+
+</body>
+</html>

@@ -35,30 +35,55 @@
         <div class="register-right">
 
             <form>
-
+                 <label for="">
                 <input
                     type="text"
+                    id="first-name"
                     placeholder="Enter first name"
                     required
                 >
+                <span id="firstNme-validation"></span>
+                </label>
+
+                <label for="">
 
                 <input
                     type="text"
+                    id="last-name"
                     placeholder="Enter last name"
                     required
                 >
+                 <span id="lastName-validation"></span>
+                 </label>
+
+                 <label for="">
 
                 <input
-                    type="email"
+                    type="text"
+                    id="email"
                     placeholder="Enter your email"
                     required
                 >
+                 <span id="email-validation"></span>
+                    </label>
 
+
+                    <label for="">
                 <input
                     type="tel"
+                    id="phone"
                     placeholder="Enter your phone"
                     required
                 >
+                <span id="phone-validation"></span>
+                </label>
+
+
+                <label for="">
+
+                <input type="password" id="password" placeholder="Enter yuor password">
+                 <span id="password"></span>
+                </label>
 
                 <button type="submit">Sign up</button>
 
@@ -67,6 +92,8 @@
         </div>
 
     </div>
+
+    <script src="./sign-up.js"></script>
 
 </body>
 </html>

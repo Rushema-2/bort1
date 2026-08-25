@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #707375;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.title p {
+    color: #ddd;
+    font-size: 15px;
+}
+
+.search {
+    width: 25%;
+    position: relative;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.search i {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+main {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    color: #3a3939;
+
+}
+
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+tbody tr:nth-child(even){
+    background-color: rgb(190, 186, 186);
+}
+
+form{
+    background-color: red;
+     position: absolute;
+     padding: 30px;
+      color: white;
+      margin: auto;
+    width: 500px;
+    top:20%;
+    left:30%
+}
+.form-input {
+    padding: 10px;
+    color: gray;
+    margin: 10px 10px;
+}
+.form-button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 900;
+    color: white;
+}
