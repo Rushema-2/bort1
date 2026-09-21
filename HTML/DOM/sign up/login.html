@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Here</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="./sign-up.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+
+    
+        <div class="register-left">
+
+            <h1>Login Here</h1>
+
+            <div class="icon">
+                <img src="../image/sign.png">
+            
+            </div>
+
+        </div>
+
+
+     
+        <div class="register-right">
+
+            <form>
+             <label for="">
+                <input type="text" id="email"  placeholder="Enter your email" required>
+                 <span id="email-validation"></span>
+                 </label>
+                 <label for="">
+                <input type="password" id="password" placeholder="Enter yuor password">
+                  <span id="password-validation"></span>
+                      </label>
+                       <p id="invalid-message"></p>
+                <button type="submit">Sign up</button>
+                <div class="link">
+                    <p>you don't have account ?</p>
+                    <a href="./sign-up.html">sigUp</a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="./sign-up.js"></script>
+
+</body>
+</html>
