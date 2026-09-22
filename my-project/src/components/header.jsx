@@ -25,6 +25,18 @@ function Header() {
 
   const [isActive, setIsActive] = useState("All");
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubscribe = () => {
+   
+    setIsLoading(true);
+
+  
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsOpen(true);
+    }, 5000);
+  };
 
   const items = [
     {
@@ -97,7 +109,11 @@ function Header() {
       <div className="flex justify-between items-center py-5 px-10 lg:px-30 border-b-2 border-gray-600">
 
         <div className="flex items-center gap-5">
-          <img className="w-32 h-24 object-contain" src={logo} alt="The Daily Brief logo" />
+          <img
+            className="w-32 h-24 object-contain"
+            src={logo}
+            alt="The Daily Brief logo"
+          />
 
           <h1 className="font-bold text-3xl text-blue-900">
             THE DAILY BRIEF
@@ -106,9 +122,19 @@ function Header() {
 
         <p>{toDayDate.toDateString()}</p>
 
-        <Button name="Subscribe" onClick={() => setIsOpen(true)} background="bg-blue-900" />
+        <Button
+          name={isLoading ? "Loading..." : "Subscribe"}
+          onClick={handleSubscribe}
+          background="bg-blue-900"
+        />
       </div>
 
+  
+      {isLoading && (
+        <div className="w-full h-1 bg-gray-200 overflow-hidden">
+          <div className="h-full bg-blue-700 animate-loading-bar"></div>
+        </div>
+      )}
 
       <div className="flex flex-wrap gap-10 py-5 px-10 lg:px-30">
 
@@ -119,12 +145,20 @@ function Header() {
             <div
               key={item.label}
               onClick={() => setIsActive(item.label)}
-              className={`flex items-center gap-2 cursor-pointer pb-3 ${ isCurrentActive? "border-b-2 border-blue-700"  : ""}`}
+              className={`flex items-center gap-2 cursor-pointer pb-3 ${
+                isCurrentActive
+                  ? "border-b-2 border-blue-700"
+                  : ""
+              }`}
             >
               {item.icon}
 
               <span
-                className={`font-medium ${ isCurrentActive? "text-blue-700": "" }`}
+                className={`font-medium ${
+                  isCurrentActive
+                    ? "text-blue-700"
+                    : ""
+                }`}
               >
                 {item.label}
               </span>
@@ -132,7 +166,6 @@ function Header() {
           );
         })}
 
-      
         <div className="flex items-center gap-1 cursor-pointer pb-3">
           <span>More</span>
           <MdMoreHoriz />
@@ -140,7 +173,10 @@ function Header() {
       </div>
 
   
-      {isOpen && ( <LoginForm isClosed={() => setIsOpen(false)} />
+      {isOpen && (
+        <LoginForm
+          isClosed={() => setIsOpen(false)}
+        />
       )}
     </>
   );
